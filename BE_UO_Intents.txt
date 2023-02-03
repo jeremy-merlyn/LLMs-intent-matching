@@ -1,0 +1,140 @@
+Command: open youtube
+Response:
+ {
+    "id": "OPEN_URL",
+    "params":
+      {
+        “url”: "https://youtube.com"
+      }
+  }
+Command: search for cats on yahoo
+Response:
+ {
+    "id": "SEARCH_ON_SITE",
+    "params": 
+        {
+          "term": "cats",
+          "site": "yahoo.com"
+        }
+  }
+Command: close this tab
+Response:
+ {
+    "id": "CLOSE_CURRENT_TAB",
+    "params": null
+  }
+Command: close every tab
+Response:
+ {
+    "id": "CLOSE_ALL_TABS",
+    "params": null
+  }
+Command: close google slides tab
+Response:
+ {
+    "id": "CLOSE_NAMED_TAB",
+    "params": {
+      "browser_app_name": "docs.google.com/presentation"
+    }
+  }
+Command: switch to the next tab
+Response:
+ {
+    "id": "NEXT_TAB",
+    "params": null
+  }
+Command: go to the previous tab
+Response:
+ {
+    "id": "PREVIOUS_TAB",
+    "params": null
+  }
+Command: zoom in by 10%
+Response:
+ {
+    "id": "ZOOM",
+    "params": {
+      "zoom_direction": "in",
+      "percent": 10,
+      "operator": "by"
+    }
+  }
+Command: play video
+Response:
+ {
+    "id": "START_STOP_VIDEO",
+    "params": {
+      "video_action": "start"
+    }
+  }
+Command: stop the video
+Response:
+ {
+    "id": "START_STOP_VIDEO",
+    "params": {
+      "video_action": "stop"
+    }
+  }
+Command: next slide
+Response:
+ {
+    "id": "NAVIGATE_SLIDE",
+    "params": {
+      "slide_direction": "next"
+    }
+  }
+Command: previous slide
+Response:
+ {
+    "id": "NAVIGATE_SLIDE",
+    "params": {
+      "slide_direction": "previous"
+    }
+  }
+Command: start presenting
+Response:
+ {
+    "id": "PRESENT",
+    "params": {
+      "presentation_action": "start",
+    }
+  }
+Command: stop the presentation
+Response:
+ {
+    "id": "PRESENT",
+    "params": {
+      "presentation_action": "stop",
+    }
+  }
+Command: go forward by 2 minutes
+Response:
+  {
+    "id": "FORWARD_VIDEO",
+    "params": {
+      "duration": {
+        "unit": "min",
+        "amount": 2
+      }
+    }
+  }
+Command: go backward by 30 seconds
+Response:
+  {
+    "id": "BACKWARD_VIDEO",
+    "params": {
+      "duration": {
+        "unit": "s",
+        "amount": 30
+      }
+    }
+  }
+Command: mute
+Reponse:
+ {
+    "id": "MUTE",
+    "params": 
+      { 
+        “mute_direction”: “mute”
+      } 
+  }

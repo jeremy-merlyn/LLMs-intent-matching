@@ -1,0 +1,105 @@
+Command: turn off promethean
+Response:
+{
+  "id": "POWER_OFF_PROMETHEAN",
+  "params": null 
+}
+Command: show applications
+Response:
+{
+  "id": "APPLICATION_OVERLAY",
+  "params": 
+    {
+      “overlay_direction”: “open”
+    } 
+}
+Command: exit applications
+Response:
+{
+  "id": "APPLICATION_OVERLAY",
+  "params": 
+    {
+      “overlay_direction”: “close”
+    } 
+}
+Command: full screen
+Response:
+{
+  "id": "FULLSCREEN",
+  "params": 
+    {
+      “fullscreen_direction”: “enter”
+    } 
+}
+Command: turn the volume up by 3
+Response:
+{
+  "id": "ADJUST_VOLUME",
+  "params": 
+    {
+      “volume_control”: “up”,
+      "operator": "by",
+      "cardinal": 3
+    } 
+}
+Command: mute
+Response:
+{
+  "id": "MUTE",
+  "params": 
+    { 
+      “mute_direction”: “mute”
+    } 
+}
+Command: show settings
+Response:
+{
+  "id": "SETTINGS_OVERLAY",
+  "params": 
+    {
+      “overlay_direction”: “open”
+    } 
+}
+Command: close this window
+Response:
+{
+  "id": "CLOSE_WINDOW",
+  "params": null
+}
+Command: close everything
+Response:
+{
+  "id": "CLOSE_ALL_WINDOWS",
+  "params": null
+}
+Command: start a timer for 5 minutes
+Response:
+{
+  "id": "SET_TIMER",
+  "params": 
+    {
+      “timer_duration”: 
+        {
+          “unit” : “min”,
+          “amount” : 5
+        } 
+    }
+}
+Command: bring up timer
+Response:
+{
+  "id": "TIMER_OVERLAY",
+  "params":
+    {
+      “overlay_direction”: “open”
+    }
+}
+Command: exit timer
+Response:
+{
+  "id": "TIMER_OVERLAY",
+  "params":
+    {
+      “overlay_direction”: “close”
+    }
+}
